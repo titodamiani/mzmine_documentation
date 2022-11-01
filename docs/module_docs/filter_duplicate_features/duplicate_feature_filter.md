@@ -4,7 +4,7 @@
 
 :material-menu-open: **Feature list method → Feature list filtering → Duplicate feature filter**.
 
-This filter can help eliminate misaligned feature list rows after the gap-filling process. 
+The _duplicate fearture filter_ module aims at eliminating duplicate feature that might have originated during the gap-filling process. For more details, see [Peak Finder documentation](../gapfill_peak_finder/gap-filling.md).
 
 It has three different **modes**:
 
