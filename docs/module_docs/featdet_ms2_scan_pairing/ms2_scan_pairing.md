@@ -1,10 +1,7 @@
 # MS/MS scan pairing
 :material-menu-open: **Feature list methods → Processing → Assign MS2 to features**
 
-This module pairs the MS2 fragmentation spectra (collected in [_DDA mode_](../../terminology/general-terminology.md#data-dependent-acqusition-mode-dda)) to the corresponding features. By doing so, annotations of features based on their fragmentation MS2 spectra can be associated with the individual LC peak. The algorithm examines XXX in the EIC trace. A RT tolerance is set and used to assign XXX.
-
-
-This module allows to pair MS2 scans with features. It assigns all MS2 scans within range to all features in chosen feature list. 
+This module pairs each MS2 fragmentation spectrum (collected in [_DDA mode_](../../terminology/general-terminology.md#data-dependent-acqusition-mode-dda)) to the corresponding feature, based on the RT offeset between the LC peak and the moment the MS2 was triggered during the run. This step is crucial to connect the quantitative (i.e., peak area extrapolated from MS1 data) and qualitative information (i.e., annotation based on MS2 spectra) in LC-(IMS)-MS data. 
 
 !!! warning inline
 
