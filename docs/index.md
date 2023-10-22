@@ -1,4 +1,9 @@
-# **Welcome to the MZmine 3 wiki!**
+!!! info
+    When using MZmine, please cite the corresponding paper:</br>
+    Robin Schmid, Steffen Heuckeroth, Ansgar Korf et al. Integrative analysis of multimodal mass spectrometry data in MZmine 3. Nature Biotechnology (2023), [doi:10.1038/s41587-023-01690-2](https://www.nature.com/articles/s41587-023-01690-2). 
+
+
+# Welcome to the MZmine 3 wiki!
 
 MZmine 3 is an open-source and platform-independent software for mass spectrometry (MS) data
 processing and visualization. It enables large-scale metabolomics and lipidomics research by
@@ -18,11 +23,15 @@ Such a great progress was made possible by the invaluable contribution of
 many [developers](https://github.com/mzmine/mzmine3/graphs/contributors) from research labs
 distributed all over the world!
 
-Want to get started with MZmine 3? Check out our [getting started](getting_started.md) page!
+## Want to get started with MZmine 3? 
+ 
+Check out our **[getting started](getting_started.md)** page or **[MZmine video tutorials on YouTube](https://www.youtube.com/@mzmineproject/playlists)**!
+
+![Youtube channel](index-youtube-channel.png)
  
 ---
 
-## **What's new compared to MZmine 2?**
+## What's new compared to MZmine 2?
 
 MZmine 3 comes with a redesigned and fully customizable [GUI](main-window-overview.md) based on the
 JavaFX technology that allow an interactive visualization and validation of results from every
@@ -47,7 +56,7 @@ the [Google Summer of Code](https://summerofcode.withgoogle.com/) program.
 
 ---
 
-## **About this documentation**
+## About this documentation
 
 Here you can find documentation for both processing and visualization modules in MZmine 3. Moreover,
 data processing pipelines for untargeted [LC-MS](workflows/lcmsworkflow/lcms-workflow.md)
@@ -59,7 +68,7 @@ started with the main features of MZmine 3!
 
 ---
 
-## **How to contribute**
+## How to contribute
 
 The MZmine community is always welcoming new developers and contributions! You can contribute by
 improving existing modules or even adding new featurs in MZmine 3! Please, check out our

@@ -5,9 +5,7 @@
 MZmine 3 is developed using Java technology, therefore it is completely platform independent, requiring only Java runtime for running. 
 One of the main design goals is to keep a strict separation between the application core and modules for data processing and visualization. The general architecture of the modules is presented at the following scheme.
 
-[//]: # (TODO Update scheme)
-
-![Architecture](architecture.png)
+![Architecture](mzmine3-architecture-01.png)
 
 [//]: # (TODO Describe application core)
 [//]: # (Describe data processing modules)
@@ -30,22 +28,6 @@ One of the main design goals is to keep a strict separation between the applicat
 !!! tip
     The practical instructions for MZmine coding can be found [here](module_development.md).
 
-## **Libraries used**
-
-    Apache XML Graphics - EPS image export
-    Chemistry Development Kit - Isotope pattern and molecular calculations
-    Freehep - EMF image export
-    Google Guava - Utility classes
-    JavaHelp - Help system
-    JChemPaint - 2D molecule visualization
-    JFreeChart - TIC, Spectra and 2D visualizers
-    JMol - 3D molecule visualization
-    jmzml - mzML file import
-    jmzTab - mzTab file import and export
-    NetCDF-Java - NetCDF file import
-    VisAD - 3D visualizer
-    WEKA - Clustering and other machine learning algorithms
-
 ## **Module structure**
 
 Each module in MZmine necessarily contains three classes:
@@ -59,7 +41,7 @@ Optionally module can contain dialog class:
 - [Name]Dialog.java
 
 !!! tip
-   You can fnd examples for all these classes in the `java/io/github/mzmine/modules/example` folder.
+    You can fnd examples for all these classes in the `java/io/github/mzmine/modules/example` folder.
 
 ### **Module class** 
 

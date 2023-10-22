@@ -8,9 +8,12 @@ use_directory_urls: false
 nav:
   - Home page: index.md
   - Getting started: getting_started.md
+  - Learners corner: learners_corner.md
   - Main window overview: main-window-overview.md
   - Processing wizard: wizard.md
   - Data conversion: data_conversion.md
+  - Performance options: performance.md
+  - Command line tool (batch mode): commandline_tool.md
   - Integration to other tools: tool_integration.md
   - Citations: citations.md
 
@@ -21,6 +24,7 @@ nav:
           -  Feature list import: module_docs/io/feat-list-import.md
           -  Feature list export: module_docs/io/feat-list-export.md
           -  Export to other software: module_docs/io/data-exchange-with-other-software.md
+          -  Spectral library export: module_docs/io_spectral_library_export/spectral_library_generation.md
 #         TODO Add feature list import/export
       - File merging:
         - Raw data files merging: module_docs/featdet_file_merging/raw-files-merging.md
@@ -46,6 +50,8 @@ nav:
         - Ion mobility expander: module_docs/lc-ims-ms_featdet/featdet_ims_expander/ims-expander.md
         - Ion mobility trace builder: module_docs/lc-ims-ms_featdet/featdet_ion_mobility_trace_builder/ion-mobility-trace-builder.md
         - Recursive IMS builder: module_docs/lc-ims-ms_featdet/recursive_ims_builder/recursive-ims-builder.md
+      - MS imaging feature detection:
+        - Image builder: module_docs/imaging_featdet/featdet_image_builder/image-builder.md
       - Smoothing: module_docs/featdet_smoothing/smoothing.md
       - Resolving:
         - Local minimum resolver: module_docs/featdet_resolver_local_minimum/local-minimum-resolver.md
@@ -115,11 +121,14 @@ nav:
           - Interactive Ion Identity Molecular Networks: visualization_modules/interactive_ion_id_netw/interactive_ion_id_netw.md
           - Feature histograms: visualization_modules/feature_histograms/feature_hist.md
           - Additional tools: visualization_modules/processed_additional/processed_additional.md
+      - Massvoltammogram: visualization_modules/massvoltammogram/massvoltammogram.md
 
   - Workflows:
       - Untargeted LC-MS workflow: workflows/lcmsworkflow/lcms-workflow.md
       - Untargeted LC-IMS-MS workflow: workflows/imsworkflow/ion-mobility-data-processing-workflow.md
+      - Untargeted MS imaging workflow: workflows/imagingworkflow/imaging-workflow.md
       - Batch processing: workflows/batch_processing/batch-processing.md
+      - Library generation: workflows/librarygeneration/library_generation.md
 
   - Additional resources:
       - General Terminology: terminology/general-terminology.md
@@ -128,12 +137,12 @@ nav:
       - Kendrick mass defect: module_docs/feature_list_row_filter/kendrick_mass_defect.md
       - Spectral similarity measures: module_docs/id_spectral_library_search/spectral-similarity-measures.md
 
-  - Performance options: performance.md
-  - Command line tool (batch mode): commandline_tool.md
   - Contribute:
       - Coding:
-            - General structure: coding/general_structure.md
             - MZmine development (in IntelliJ): contribute_intellij.md
+            - Upgrade JDK version: coding/upgrade_jdk_version.md
+            - General structure: coding/general_structure.md
+            - macOS code signing: coding/macos_signing.md
             - Module development: coding/module_development.md
             - Modules list: coding/module_list.md
 #            TODO Finish writing these
@@ -144,9 +153,15 @@ nav:
       - Documentation template: contribute_docu_template.md
 
   - Acknowledgements: wikiacknowledgements.md
+  - Troubleshooting: troubleshooting.md
   - Changelog: changelog.md
+  - Workshops: workshops.md
+  
 
-copyright: This documentation is licensed under the MIT License (MIT). 
+copyright: This documentation is licensed under the MIT License (MIT).
+
+extra_css:
+  - css/extra.css
 
 theme:
   name: material
@@ -155,7 +170,7 @@ theme:
 plugins:
   - search
   - git-authors:
-      show_contribution: true
+      show_contribution: false
   - git-revision-date-localized:
       type: datetime
   - with-pdf:

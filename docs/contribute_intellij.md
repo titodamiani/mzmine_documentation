@@ -34,7 +34,7 @@ The code formatter is important for contributions to the main version of MZmine 
 1. Import the style format from `mzmine-intellij-code-formater.xml`
 2. Apply format to any file with CTRL+ALT+L
 3. Can also be applied on each file saved or each commited change (see below)
-4. Better exclude specific file formats from being formatted (see below screenshot 2) (`.*{fxml,xml,htm,html,json,yml,css}`)
+4. Better exclude specific file formats from being formatted (see below screenshot 2) (`*.{fxml,xml,htm,html,json,yml,css}`)
 
 ![](img/contribute/intellij_style.png)
 
@@ -72,7 +72,7 @@ Live templates are used to add custom entries to the code completion, e.g., to q
 Access **Settings/Editor/Live Templates** (CTRL+ALT+S on Windows) and add a new template (+ button). Define the
 abbreviation to trigger autocompletion at this statement, define the template text, and change the target context
 (“**Java**”) at the bottom. The template below generates a logger after typing log and pressing CTRL+SPACE. The variable
-**$CLASS_NAME$** was set to represent the current className() under **Edit variable**.
+`$CLASS_NAME$` was set to represent the current className() under **Edit variable**.
 
 The template:
 ```java
@@ -85,10 +85,27 @@ private static final Logger logger = Logger.getLogger(Scan.class.getName());
 
 ![](img/contribute/intellij_template.png)
 
-Another example to create Javadoc links for @l . The variable (here $target$) places the cursor.
+Another example to create Javadoc links for `@l` . The variable (here `$target$`) places the cursor.
 
 ![](img/contribute/intellij_template2.png)
 
+
+### Postfix templates
+Postfix templates allow to surround a preceeding variable or expression with code. Similar to live templates but after the expression. Go to the settings (CTRL+ALT S on Windows) and search for postfix templates. Click on the + button to add a new Java template. 
+Add a key, specify the minimum java version, check "Use static import if possible" and enter the following expression text:
+
+- **key**: nne 
+- **expression**: `Objects.requireNonNullElse($EXPR$, $END$)`
+
+This will enable the following:
+```java
+// input as variable.nne ...
+spectrum.nne
+// ... auto complete will produce with _ being the cursor position
+Objects.requireNonNullElse(spectrum, _)
+// ... or this when "use static import" is activated 
+requireNonNullElse(spectrum, _)
+```
 
 
 ## Troubleshooting
