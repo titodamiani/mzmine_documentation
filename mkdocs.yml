@@ -7,15 +7,17 @@ use_directory_urls: false
 
 nav:
   - Home page: index.md
-  - Getting started: getting_started.md
-  - Learners corner: learners_corner.md
-  - Main window overview: main-window-overview.md
-  - Processing wizard: wizard.md
-  - Data conversion: data_conversion.md
-  - Performance options: performance.md
-  - Command line tool (batch mode): commandline_tool.md
-  - Integration to other tools: tool_integration.md
-  - Citations: citations.md
+  - Getting started:
+    - First steps: getting_started.md
+    - Main window overview: main-window-overview.md
+    - Data conversion: data_conversion.md
+    - Command line tool (batch mode): commandline_tool.md
+    - Batch processing: workflows/batch_processing/batch-processing.md
+    - Processing wizard: wizard.md
+
+  
+  
+  
 
   - Processing modules:
       - I/O:
@@ -127,15 +129,21 @@ nav:
       - Untargeted LC-MS workflow: workflows/lcmsworkflow/lcms-workflow.md
       - Untargeted LC-IMS-MS workflow: workflows/imsworkflow/ion-mobility-data-processing-workflow.md
       - Untargeted MS imaging workflow: workflows/imagingworkflow/imaging-workflow.md
-      - Batch processing: workflows/batch_processing/batch-processing.md
       - Library generation: workflows/librarygeneration/library_generation.md
 
-  - Additional resources:
+  - Learners corner:
+      - Useful links: learners_corner.md
       - General Terminology: terminology/general-terminology.md
       - IMS Terminology: terminology/ion-mobility-terminology.md
       - LC-MS and LC-IMS-MS data comparison: workflows/imsworkflow/lc-ms-and-lc-ims-ms-data-comparison.md
+      - Integration to other tools: tool_integration.md
       - Kendrick mass defect: module_docs/feature_list_row_filter/kendrick_mass_defect.md
       - Spectral similarity measures: module_docs/id_spectral_library_search/spectral-similarity-measures.md
+
+  - Troubleshooting:
+    - Common issues: troubleshooting.md
+    - Performance optimization: performance.md
+    - MacOS: macos_sign.md
 
   - Contribute:
       - Coding:
@@ -149,17 +157,15 @@ nav:
 #            - Raw data structure: coding/raw_data_structure.md
 #            - Feature data structure: coding/feature_data_structure.md
 #            - Example module - Spectral entropy: coding/example_module.md
-      - Contribute to documentation: contribute.md
+      - Documentation: contribute.md
       - Documentation template: contribute_docu_template.md
 
-  - Misc:
-    - MacOS: macos_sign.md
-  - Acknowledgements: wikiacknowledgements.md
-  - Troubleshooting:
-    - Troubleshooting: troubleshooting.md
-    - MacOS: macos_sign.md
-  - Changelog: changelog.md
-  - Workshops: workshops.md
+  - Acknowledgements:
+    - Citations: citations.md
+    - Workshops: workshops.md
+    - Libraries: wikiacknowledgements.md
+    - Changelog: changelog.md
+
   
 
 copyright: This documentation is licensed under the MIT License (MIT).
