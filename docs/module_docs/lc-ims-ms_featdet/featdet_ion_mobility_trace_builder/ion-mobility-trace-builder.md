@@ -4,7 +4,7 @@
 
 :material-menu-open: **Feature detection → LC-IMS-MS → Ion mobility trace builder**.
 
-The **Ion mobility trace builder** will build [ion mobility traces](../../../terminology/ion-mobility-terminology.md#ion-mobility-trace) from the raw data. Alternatively, the **Recursive IMS builder** can be used, which requires less RAM but takes longer.
+The **Ion mobility trace builder** will build [ion mobility traces](../../../learners_corner/terminology/ion-mobility-terminology.md#ion-mobility-trace) from the raw data. Alternatively, the **Recursive IMS builder** can be used, which requires less RAM but takes longer.
 
 ![imstracebuilder-dialog](imstracebuilderdialog.png)
 
@@ -35,11 +35,11 @@ set here if the MS1 acquisition rate is sufficient.
 ##### Minimum total signals
 
 Specifies the total number of peaks in the mobility dimension in all mobility scans. Every "dot" in
-an ion mobility trace represents a single datapoint. 
+an ion mobility trace represents a single datapoint.
 
 ##### Advanced parameters
 
-:warning: For most applications, these parameters do not need to set/altered. 
+:warning: For most applications, these parameters do not need to set/altered.
 
 For high mobility resolved data the mobilograms might become noisy due to a fewer ions reaching the detector at the same time. By default, the number of binned scans is set to cover about 0.0008 Vs/cm^2 per bin. The effect of
 binning can be seen [here](../featdet_ims_expander/ims-expander.md#binned-mobilogram-example). If you are unsure about the nature of your data, you can perform trace building with the standard parameters and apply/preview the binning afterwards via the **Feature detection → Mobilogram
@@ -60,7 +60,7 @@ The binning width in mobility units of the selected raw data file.
 ## **Processing result**
 
 After performing ion mobiltiy trace detection, a feature list is created in the feature list tab
-(see [feature lists tab](../../../main-window-overview.md#ms-data-files-and-feature-lists-tab)). In the
+(see [feature lists tab](../../../getting_started/main-window-overview.md#ms-data-files-and-feature-lists-tab)). In the
 feature table, multiple columns are created. The displayed columns can be set via the button on the
 right of the feature table ([1]).
 

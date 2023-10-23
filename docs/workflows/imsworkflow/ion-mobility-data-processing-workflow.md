@@ -3,20 +3,20 @@
 Compared to regular LC-MS, LC-IM-MS data is more complex due to the additional separation dimension.
 Since some terms might not be straightforward for new users, a basic explanation of IM separation
 principles and the terminology used within this documentation is
-provided [here](../../terminology/ion-mobility-terminology.md).
+provided [here](../../learners_corner/terminology/ion-mobility-terminology.md).
 
 ## Supported formats
 
-* Vendor formats:
-    * .tdf (Native Bruker LC-IMS-MS and MALDI-IMS-MSI format)
-    * .tsf (Native Bruker MALDI-IMS-MS (single shot) format)
-* .mzML
-    * Created via [MSConvert](https://proteowizard.sourceforge.io/download.html) from native Bruker
-      data
-    * Created via [MSConvert](https://proteowizard.sourceforge.io/download.html) from native
-      Waters/Agilent data
+- Vendor formats:
+  - .tdf (Native Bruker LC-IMS-MS and MALDI-IMS-MSI format)
+  - .tsf (Native Bruker MALDI-IMS-MS (single shot) format)
+- .mzML
+  - Created via [MSConvert](https://proteowizard.sourceforge.io/download.html) from native Bruker
+    data
+  - Created via [MSConvert](https://proteowizard.sourceforge.io/download.html) from native
+    Waters/Agilent data
 
-***
+---
 
 ## Feature detection workflows
 
@@ -65,17 +65,17 @@ Bruker import).
 - [Smoothing in retention time dimension (optional)](../../module_docs/featdet_smoothing/smoothing.md)
 - [Resolving in retention time dimension](../../module_docs/featdet_resolver_local_minimum/local-minimum-resolver.md)
 - [Expanding EICs in mobility dimension](../../module_docs/lc-ims-ms_featdet/featdet_ims_expander/ims-expander.md)
-- [Smoothing  in mobility dimension (optional)](../../module_docs/featdet_smoothing/smoothing.md#mobility-dimension)
+- [Smoothing in mobility dimension (optional)](../../module_docs/featdet_smoothing/smoothing.md#mobility-dimension)
 - [Resolving in mobility dimension](../../module_docs/featdet_resolver_local_minimum/local-minimum-resolver.md#resolving-the-ion-mobility-dimension)
 - [Smoothing in rt and mobility dimension (optional)](../../module_docs/featdet_smoothing/smoothing.md)
-    - Some recognised features might have rather noisy signals (in rt and mobility dimension) after
-      the mobility resolving step. If smoother shapes are required, the smoothing can be reapplied
-      afterwards. In that case, smoothing can be applied to both dimensions at once.
+  - Some recognised features might have rather noisy signals (in rt and mobility dimension) after
+    the mobility resolving step. If smoother shapes are required, the smoothing can be reapplied
+    afterwards. In that case, smoothing can be applied to both dimensions at once.
 
 The basic principle of the workflow is illustrated below:
 ![IMS_adap_workflow_01.png](IMS_adap_workflow_01.png)
 **a**, IMS heatmaps are accumulated to frame spectra (**b**). From the accumulated frame
-spectra, [EICs](../../terminology/general-terminology.md#extracted-ion-chromatogram) are built (**c**).
+spectra, [EICs](../../learners_corner/terminology/general-terminology.md#extracted-ion-chromatogram) are built (**c**).
 These EICs are resolved to individual features
 by a [resolver](../../module_docs/featdet_resolver_local_minimum/local-minimum-resolver.md) (**d**).
 The resolved features are now defined by RT and m/z windows, which can be expanded in mobility
@@ -87,7 +87,7 @@ create individual IMS features.
 ### LC-IMS-MS workflow
 
 The LC-IMS-MS workflow will directly
-build [ion mobility traces](../../terminology/ion-mobility-terminology.md#ion-mobility-trace) from
+build [ion mobility traces](../../learners_corner/terminology/ion-mobility-terminology.md#ion-mobility-trace) from
 the raw data in the mobility scans. This workflow does not necessarily require summed frame spectra.
 However, if extracted ion chromatograms shall be visualized via
 the [Chromatogram visualizer](../../visualization_modules/raw_data_overview/raw_data_additional.md#chromatogram-plot),
@@ -102,12 +102,12 @@ isomers might hide behind a single chromatographic peak.
 - [Ion mobility trace builder](../../module_docs/lc-ims-ms_featdet/featdet_ion_mobility_trace_builder/ion-mobility-trace-builder.md)
 - [Smoothing in retention time dimension (optional)](../../module_docs/featdet_smoothing/smoothing.md)
 - [Resolving in retention time dimension](../../module_docs/featdet_resolver_local_minimum/local-minimum-resolver.md)
-- [Smoothing  in mobility dimension (optional)](../../module_docs/featdet_smoothing/smoothing.md#mobility-dimension)
+- [Smoothing in mobility dimension (optional)](../../module_docs/featdet_smoothing/smoothing.md#mobility-dimension)
 - [Resolving in mobility dimension](../../module_docs/featdet_resolver_local_minimum/local-minimum-resolver.md#resolving-the-ion-mobility-dimension)
 - [Smoothing in rt and mobility dimension (optional)](../../module_docs/featdet_smoothing/smoothing.md)
-    - Some recognised features might have rather noisy signals (in rt and mobility dimension) after
-      the mobility resolving step. If smoother shapes are required, the smoothing can be reapplied
-      afterwards. In that case, smoothing can be applied to both dimensions at once.
+  - Some recognised features might have rather noisy signals (in rt and mobility dimension) after
+    the mobility resolving step. If smoother shapes are required, the smoothing can be reapplied
+    afterwards. In that case, smoothing can be applied to both dimensions at once.
 
 ## Graphical comparison of LC-MS and LC-IMS-MS data
 

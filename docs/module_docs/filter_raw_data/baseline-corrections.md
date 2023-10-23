@@ -4,25 +4,25 @@
 
 :material-menu-open: **Raw data methods → Raw data filtering → Baseline correction**
 
-This module performs baseline correction on raw data files. It is designed to **compensate for gradual shifts** in the chromatographic baseline by detecting the baseline and then subtracting it from the raw data intensity values. 
+This module performs baseline correction on raw data files. It is designed to **compensate for gradual shifts** in the chromatographic baseline by detecting the baseline and then subtracting it from the raw data intensity values.
 
 The module proceeds as follows for each raw data file passed to it:
 
 - The full range of m/z values present in the raw data is divided into a series of bins of a specified width (see m/z bin width).
-- For each bin a chromatogram is constructed from the raw data points whose m/z values fall within the bin. This chromatogram may be either the [base peak chromatogram](../../terminology/general-terminology.md#base-peak-chromatogram) or [total ion count (TIC) chromatogram](../../terminology/general-terminology.md#total-ion-current-chromatogram). 
+- For each bin a chromatogram is constructed from the raw data points whose m/z values fall within the bin. This chromatogram may be either the [base peak chromatogram](../../learners_corner/terminology/general-terminology.md#base-peak-chromatogram) or [total ion count (TIC) chromatogram](../../learners_corner/terminology/general-terminology.md#total-ion-current-chromatogram).
 - The raw intensity values of each data point in a bin are corrected by subtracting the bin's baseline. Subtraction of baseline intensity values proceeds according to the type of chromatogram used to determine the baseline.
 
-    If the **base peak chromatogram** was used then the corrected intensity values are calculated as follows:
+  If the **base peak chromatogram** was used then the corrected intensity values are calculated as follows:
 
-    $$I_{corr}=max(0,I_{orig}-I_{base})$$
+  $$I_{corr}=max(0,I_{orig}-I_{base})$$
 
-    If the **TIC chromatogram** was used then the corrected intensity values are calculated as follows:
-    
-    $$I_{corr}=max(0,I_{orig}*(1-I_{base}/I_{max}))$$
+  If the **TIC chromatogram** was used then the corrected intensity values are calculated as follows:
 
-    where $I_{orig}$, $I_{base}$, $I_{max}$, and $I_{corr}$ are the original, baseline, maximum and corrected intensity values, respectively, for a given scan and m/z bin. 
+  $$I_{corr}=max(0,I_{orig}*(1-I_{base}/I_{max}))$$
 
-    If $I_{base}$ is less or equal to zero then no correction is performed, i.e. $I_{corr}=I_{orig}$.
+  where $I_{orig}$, $I_{base}$, $I_{max}$, and $I_{corr}$ are the original, baseline, maximum and corrected intensity values, respectively, for a given scan and m/z bin.
+
+  If $I_{base}$ is less or equal to zero then no correction is performed, i.e. $I_{corr}=I_{orig}$.
 
 - A new raw data file is generated from the corrected intensity values.
 
@@ -62,9 +62,9 @@ This option allows you to choose between two Java libraries to communicate with 
 
 Whether to remove the original raw data file once baseline correction is complete.
 
-## **Correction methods** 
+## **Correction methods**
 
-More information on correction methods is available in [CRAN decription of baseline package](https://cran.r-project.org/web/packages/baseline/) 
+More information on correction methods is available in [CRAN decription of baseline package](https://cran.r-project.org/web/packages/baseline/)
 
 ### **Asymmetric Baseline Corrector**
 
@@ -153,7 +153,7 @@ Logical indicating whether the baseline should be an interpolating spline throug
 
 **bend factor**
 
-Does nothing if equals to zero. Helps fitting better with low **"df"**. 
+Does nothing if equals to zero. Helps fitting better with low **"df"**.
 
 :material-lightbulb: Try starting with value around 5E4.
 
@@ -179,24 +179,23 @@ Number of breaks set to m/z values for finding the local minima or points below 
 
 Width of a single break. Usually the maximum width (in number of scans) of the largest peak.
 
-:warning: Overrides **"breaks"** value. 
+:warning: Overrides **"breaks"** value.
 
 **qntl**
 
-If 0, find local minima; if >0 find intensities < qntl*100th quantile locally.
+If 0, find local minima; if >0 find intensities < qntl\*100th quantile locally.
 
 ## **Requirements**
 
 :warning: This module relies on the local installation of R statistical computing software and several R packages.
 
-**Quick install** 
+**Quick install**
 
 The whole thing can be setup as follows by running the following code in R:
 
-	install.packages(c("Rserve", "ptw", "baseline", "hyperSpec"))
-	source("http://bioconductor.org/biocLite.R")
-	biocLite("PROcess")
-
+    install.packages(c("Rserve", "ptw", "baseline", "hyperSpec"))
+    source("http://bioconductor.org/biocLite.R")
+    biocLite("PROcess")
 
 **Details**
 
@@ -209,7 +208,7 @@ The whole thing can be setup as follows by running the following code in R:
       install.packages("ptw")
 
 - baseline (RollingBall and PeakDetection correctors): provides a trend based on "Rolling Ball" and "Peak Detection" algorithms implementation. To install baseline run R and enter:
-      
+
       install.packages("baseline")
 
 - hyperSpec (RubberBand corrector): provides a trend based on "Rubber Band" algorithm (which determines a convex envelope for the spectra) implementation. To install hyperSpec run R and enter:
@@ -223,12 +222,12 @@ The whole thing can be setup as follows by running the following code in R:
 
 ## **References**
 
-[1]	Boelens, H.F.M., Eilers, P.H.C., Hankemeier, T. (2005) "Sign constraints improve the detection of differences between complex spectral data sets: LC-IR as an example", Analytical Chemistry, 77, 7998 – 8007.	
+[1] Boelens, H.F.M., Eilers, P.H.C., Hankemeier, T. (2005) "Sign constraints improve the detection of differences between complex spectral data sets: LC-IR as an example", Analytical Chemistry, 77, 7998 – 8007.
 
-[2]	Rserve "A TCP/IP server which allows other programs to use facilities of R"
+[2] Rserve "A TCP/IP server which allows other programs to use facilities of R"
 
 <a>https://rforge.net/Rserve</a>.
 
-[//]: # (TODO Add images for each type of baseline correction)
+[//]: # "TODO Add images for each type of baseline correction"
 
 {{ git_page_authors }}

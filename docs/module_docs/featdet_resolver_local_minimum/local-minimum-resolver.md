@@ -4,11 +4,11 @@
 
 :material-menu-open: **Feature detection → Chromatogram resolving → Local minimum resolver**
 
-During the EICs building, overlapping and partially co-eluting features are retained as single features in the feature list (see, for example, [ADAP chromatogram builder](../lc-ms_featdet/featdet_adap_chromatogram_builder/adap-chromatogram-builder.md)). As a local minimum in the EIC trace might correspond to the valley between two adjacent, partially-resolved peaks, the **Local minimum resolver (LMR)** utilizes such minima to split "shoulder" LC peaks into individual features (_i.e._ [chromatographic resolving](../../terminology/general-terminology.md#chromatographic-resolving)).
+During the EICs building, overlapping and partially co-eluting features are retained as single features in the feature list (see, for example, [ADAP chromatogram builder](../lc-ms_featdet/featdet_adap_chromatogram_builder/adap-chromatogram-builder.md)). As a local minimum in the EIC trace might correspond to the valley between two adjacent, partially-resolved peaks, the **Local minimum resolver (LMR)** utilizes such minima to split "shoulder" LC peaks into individual features (_i.e._ [chromatographic resolving](../../learners_corner/terminology/general-terminology.md#chromatographic-resolving)).
 
-The algorithm examines all the data points in the EIC trace starting from the earliest RT. A scan window is set (see **Minimum search range RT/Mobility** parameter) and centered around the examined data point. 
+The algorithm examines all the data points in the EIC trace starting from the earliest RT. A scan window is set (see **Minimum search range RT/Mobility** parameter) and centered around the examined data point.
 
-A data point is considered a **local minimum** if it is the lowest intense point within the scan window. When a local minumum is found, a set of user-defined intensity and feature duration requirements is checked. If they are fulfilled, the original overlapping peaks are split into new, distinct features. 
+A data point is considered a **local minimum** if it is the lowest intense point within the scan window. When a local minumum is found, a set of user-defined intensity and feature duration requirements is checked. If they are fulfilled, the original overlapping peaks are split into new, distinct features.
 
 :material-lightbulb: The **LMR** is particularly suitable for LC-MS data with little noise and nice peak shapes.
 
@@ -18,24 +18,23 @@ A data point is considered a **local minimum** if it is the lowest intense point
 
 This same module can be used to resolve features co-eluting in the RT dimension, based on their ion mobility. The same concepts apply as in the resolution of the RT dimension.
 
-However, [_mobilograms_](../../terminology/ion-mobility-terminology.md#mobilograms) are examined instead of EIC traces and the same settings used for the RT dimension might not be optimal when resolving IM data. In particular, the following aspects should be born in mind:
+However, [_mobilograms_](../../learners_corner/terminology/ion-mobility-terminology.md#mobilograms) are examined instead of EIC traces and the same settings used for the RT dimension might not be optimal when resolving IM data. In particular, the following aspects should be born in mind:
 
-1. While [_frame scans_](../../terminology/ion-mobility-terminology.md#accumulations-mobility-scans-and-frames) are examined over the RT dimension, [_mobility scans_](../../terminology/ion-mobility-terminology.md#accumulations-mobility-scans-and-frames) are considered over the IM dimension.
+1. While [_frame scans_](../../learners_corner/terminology/ion-mobility-terminology.md#accumulations-mobility-scans-and-frames) are examined over the RT dimension, [_mobility scans_](../../learners_corner/terminology/ion-mobility-terminology.md#accumulations-mobility-scans-and-frames) are considered over the IM dimension.
 
-   As explained [here](../../terminology/ion-mobility-terminology.md#accumulations-mobility-scans-and-frames), _frame scans_ are essentially obtained by merging the _mobility scans_ acquired over an IM accumulation. Therefore, it might be necessary to adjust parameters like **Minimum absolute height** or **Min ratio of peak top/edge** to account for the lower signal intensity of _mobility scans_.
+   As explained [here](../../learners_corner/terminology/ion-mobility-terminology.md#accumulations-mobility-scans-and-frames), _frame scans_ are essentially obtained by merging the _mobility scans_ acquired over an IM accumulation. Therefore, it might be necessary to adjust parameters like **Minimum absolute height** or **Min ratio of peak top/edge** to account for the lower signal intensity of _mobility scans_.
 
-2. [_Mobilograms_](../../terminology/ion-mobility-terminology.md#mobilograms) are recalculated from  raw data, even though a [smoothing](../featdet_smoothing/smoothing.md) step was previously applied. Non-smoothed _mobiligrams_ tend to be more jagged than regular EIC traces (see Figure). Therefore, some parameters (_e.g._ **Min search range** and **Min ratio of peak top/edge**) should be adjusted accordingly.
+2. [_Mobilograms_](../../learners_corner/terminology/ion-mobility-terminology.md#mobilograms) are recalculated from raw data, even though a [smoothing](../featdet_smoothing/smoothing.md) step was previously applied. Non-smoothed _mobiligrams_ tend to be more jagged than regular EIC traces (see Figure). Therefore, some parameters (_e.g._ **Min search range** and **Min ratio of peak top/edge**) should be adjusted accordingly.
 
 ![Mobility resolving](mobility-resolving.png)
 
+3. _Mobilograms_ contain fewer scans (_e.g._ ≈400-1000 per [frame](../../learners_corner/terminology/ion-mobility-terminology.md#accumulations-mobility-scans-and-frames), depending on instrument type and acquisition settings), compared to regular EICs (_e.g._ ≈4500 scans for 15 minutes LC run and scan rate of 0.2 seconds). Therefore, a lower **chromatographic threshold** (_e.g._ 80%) is recommended to avoid relevant data points in the mobilogram being discarded.
 
-3. _Mobilograms_ contain fewer scans (_e.g._ ≈400-1000 per [frame](../../terminology/ion-mobility-terminology.md#accumulations-mobility-scans-and-frames), depending on instrument type and acquisition settings), compared to regular EICs (_e.g._ ≈4500 scans for 15 minutes LC run and scan rate of 0.2 seconds). Therefore, a lower **chromatographic threshold** (_e.g._ 80%) is recommended to avoid relevant data points in the mobilogram being discarded.
-
-   On the other hand, a single feature in the IM dimension is normally made up of more data points than regular LC peaks, due to the different timescale the IM separation is performed on (see [here](../../terminology/ion-mobility-terminology.md#background) for more details).
+   On the other hand, a single feature in the IM dimension is normally made up of more data points than regular LC peaks, due to the different timescale the IM separation is performed on (see [here](../../learners_corner/terminology/ion-mobility-terminology.md#background) for more details).
 
    Therefore, a higher _Min # of data points_ can be set when [resolving the ion mobility dimension](#resolving-the-ion-mobility-dimension) to filter out noisy features.
 
-5. Different vendors use different units of mobility. For instance, [TIMS](../../terminology/ion-mobility-terminology.md#trapped-ion-mobility-spectrometry-tims) express ions' mobility as Vs/cm<sup>2</sup>, whereas [time dispersive IM devices](../../terminology/ion-mobility-terminology.md#time-dispersive-ion-mobility-spectrometry-dtims-and-twims) (DTIMS and TWIMS) use the ions' drift time (expressed in milliseconds). TIMS values are numerically smaller than DTIMS or TWIMS; therefore, the **minimum search range** parameter should be adjusted accordingly.
+4. Different vendors use different units of mobility. For instance, [TIMS](../../learners_corner/terminology/ion-mobility-terminology.md#trapped-ion-mobility-spectrometry-tims) express ions' mobility as Vs/cm<sup>2</sup>, whereas [time dispersive IM devices](../../learners_corner/terminology/ion-mobility-terminology.md#time-dispersive-ion-mobility-spectrometry-dtims-and-twims) (DTIMS and TWIMS) use the ions' drift time (expressed in milliseconds). TIMS values are numerically smaller than DTIMS or TWIMS; therefore, the **minimum search range** parameter should be adjusted accordingly.
 
 ## **Parameters**
 
@@ -57,7 +56,7 @@ PROCESS IN PLACE is an advanced option to process directly in the feature list a
 
 #### **MS/MS scan pairing**
 
-Pair MS/MS fragmentation spectra collected in [DDA](../../terminology/general-terminology.md#data-dependent-acqusition-mode-dda) mode to the resolved features. This is optional at this stage as the same can be done later in the pipeline using a separate [module](../featdet_ms2_scan_pairing/ms2_scan_pairing.md). See [MS2 scan pairing](../featdet_ms2_scan_pairing/ms2_scan_pairing.md) documentation for more details.
+Pair MS/MS fragmentation spectra collected in [DDA](../../learners_corner/terminology/general-terminology.md#data-dependent-acqusition-mode-dda) mode to the resolved features. This is optional at this stage as the same can be done later in the pipeline using a separate [module](../featdet_ms2_scan_pairing/ms2_scan_pairing.md). See [MS2 scan pairing](../featdet_ms2_scan_pairing/ms2_scan_pairing.md) documentation for more details.
 
 #### **Dimension**
 
@@ -72,7 +71,7 @@ For example, a **Chromatographic threshold** = 50% will discard the lowest-inten
 
 :material-lightbulb: It must be noted that the algorithm examines the EICs throughout the entire RT range (_i.e._ also the zero data points are considered). Therefore, we recommend to set this value rather high (_e.g._ 90-95%) and lower it only if needed.
 
-:material-lightbulb: When [resolving the ion mobility dimension](#resolving-the-ion-mobility-dimension), we recommend to lower this settings to no more than 80% since [mobilograms](../../terminology/ion-mobility-terminology.md#mobilograms) contains less data points than regular LC traces.
+:material-lightbulb: When [resolving the ion mobility dimension](#resolving-the-ion-mobility-dimension), we recommend to lower this settings to no more than 80% since [mobilograms](../../learners_corner/terminology/ion-mobility-terminology.md#mobilograms) contains less data points than regular LC traces.
 
 #### **Minimum search range RT/Mobility (absolute)**
 
@@ -98,7 +97,7 @@ Minimum absolute intensity a peak needs to reach to be retained as a feature. Th
 
 :material-lightbulb: When resolving the RT dimension, the same value used as [Min highest intensity](../lc-ms_featdet/featdet_adap_chromatogram_builder/adap-chromatogram-builder.md#parameters) in the EICs building can normally be used here.
 
-:material-lightbulb: While [frame scans](../../terminology/ion-mobility-terminology.md#accumulations-mobility-scans-and-frames) are examined over the RT dimension, [mobility scans](../../terminology/ion-mobility-terminology.md#accumulations-mobility-scans-and-frames) are examined over the IM dimension. Therefore, this parameter might need to be adjested accordingly when [resolving the ion mobility dimension](#resolving-the-ion-mobility-dimension).
+:material-lightbulb: While [frame scans](../../learners_corner/terminology/ion-mobility-terminology.md#accumulations-mobility-scans-and-frames) are examined over the RT dimension, [mobility scans](../../learners_corner/terminology/ion-mobility-terminology.md#accumulations-mobility-scans-and-frames) are examined over the IM dimension. Therefore, this parameter might need to be adjested accordingly when [resolving the ion mobility dimension](#resolving-the-ion-mobility-dimension).
 
 #### **Min ratio of peak top/edge**
 
@@ -114,7 +113,7 @@ Range of acceptable peak length expressed in minutes (RT dimension) or absolute 
 
 #### **Min # of data points**
 
-Minimum number of data points a resolved peak needs to have to be considered valid and retained as a feature. This parameter can be used along with the **Peak duration range** setting as  peak duration constraint to filter out noisy features.
+Minimum number of data points a resolved peak needs to have to be considered valid and retained as a feature. This parameter can be used along with the **Peak duration range** setting as peak duration constraint to filter out noisy features.
 
 :material-lightbulb: This parameter is very similar to the [Min group size in # of scans](../lc-ms_featdet/featdet_adap_chromatogram_builder/adap-chromatogram-builder.md#parameters) settings in the ADAP chromatogram builder module and the same value can normally be used here (usually, no less than 4-5).
 
