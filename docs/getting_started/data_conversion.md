@@ -35,7 +35,7 @@ first position and the peak picking algorithm was added manually and the positio
 switched accordingly to
 peak picking first.
 
-![](img/msconvert.png)
+![](../img/msconvert.png)
 
 ### MSConvert command line interface
 
@@ -67,7 +67,7 @@ removed use this converter with the option --excludeExceptionData.
 Example for command line interface with the exclusion of exception data:
 
 ```bash
-"C:\Users\**USERNAME**\AppData\Local\Apps\ThermoRawFileParser\ThermoRawFileParser.exe" *.raw -d=INPUT_DIRECTORY -o="./mzml_ThermoRawFileParser_excl_data/" --excludeExceptionData 
+"C:\Users\**USERNAME**\AppData\Local\Apps\ThermoRawFileParser\ThermoRawFileParser.exe" *.raw -d=INPUT_DIRECTORY -o="./mzml_ThermoRawFileParser_excl_data/" --excludeExceptionData
 pause 1
 ```
 
@@ -93,9 +93,11 @@ and HD-DDA data to mzML. Lock mass correction is applied during the conversion. 
 enable centroiding (2D peak picking).
 
 <!-- markdown-link-check-disable -->
+
 The tool is available
 [here](https://microapps.on-demand.waters.com/home/showmarkdown/data-as-a-product). (register to
 download)
+
 <!-- markdown-link-check-enable -->
 
 ## Data sharing (FAIR)
@@ -109,20 +111,21 @@ article, and to ensure
 its reproducibility and impact.
 When publishing, the following information should be added in the method/data availability section:
 
-+ Input files
+- Input files
 
   Provide the input files that were used for the study by using the deposition number given by the
   data repository
   (see Data repositories). Make sure to provide the raw data file and if used the converted (and
   centroided)
   format (both can be stored in the same repository).
-+ Metadata table file
+
+- Metadata table file
 
   This file should describe the list of input files and their respective experimental information.
   Best if
   already stored within the data repository.
 
-+ MZmine Version
+- MZmine Version
 
   The MZmine version, for example MZmine 3.3.0, that was used for processing the data and describes
   the major.minor.patch
@@ -132,7 +135,8 @@ When publishing, the following information should be added in the method/data av
   results are the same
   with the previous or next release, or upload and provide a link to the version on a permanent
   storage.
-+ MZmine batch file
+
+- MZmine batch file
 
   This batch contains all parameters of the processing. Starting with MZmine 3.4.0, batch files also
   contain information
@@ -141,12 +145,14 @@ When publishing, the following information should be added in the method/data av
   be created a posteriori from any feature list by **right click → Feature list information → Show
   batch**. This batch
   file contains all steps that were used to create this specific feature list.
-+ Result files
+
+- Result files
 
   These files, e.g., feature lists or .mgf files, can be used for direct statistical (re-)analysis
   and spectral
   (re-)annotations.
-+ MZmine project file
+
+- MZmine project file
 
   Although this file can be very large, sharing it remains the best approach to make your data 100%
   FAIR.

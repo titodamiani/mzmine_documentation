@@ -1,4 +1,5 @@
 ## Older MZmine versions on macOS
+
 Macos signature for MZmine was introduced with version 3.4.0. Therefore, users need to allow MZmine
 in the macOS Gatekeeper protection by running the following command in the terminal from the
 Applications folder.
@@ -21,7 +22,7 @@ sudo xattr -cr ../MZmine.app
 sudo xattr -d com.apple.quarantine /Applications/MZmine.app
 ```
 
-![](img/install_mac1.png){: style="height:150px"} ![](img/install_mac2.png){: style="width:150px"}
+![](../img/install_mac1.png){: style="height:150px"} ![](../img/install_mac2.png){: style="width:150px"}
 
 The Terminal does not output any log or message.
-![](img/install_mac3.png)
+![](../img/install_mac3.png)

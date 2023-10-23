@@ -1,4 +1,4 @@
-# **How to contribute to the MZmine documentation** 
+# **How to contribute to the MZmine documentation**
 
 ## **About the documentation**
 
@@ -6,11 +6,11 @@ Supporting and updating the documentation is especially important for MZmine due
 
 MZmine documentation uses [MkDocs site generator](https://www.mkdocs.org/). Documentation source is created in Markdown and configured using a single YAML file. If you are new to MkDocs or Markdown, the detailed User guide can be found [here](https://www.mkdocs.org/user-guide/writing-your-docs/).
 
-[//]: # (TODO Describe local installation of documentation)
+[//]: # "TODO Describe local installation of documentation"
 
 ## **Pages structure**
 
-Structure of the pages is described in ```mkdocs.yml``` file, which represents the tree-like structure:
+Structure of the pages is described in `mkdocs.yml` file, which represents the tree-like structure:
 
 ```
 nav:
@@ -27,7 +27,9 @@ nav:
     - Feature data structure: coding/feature_data_structure.md
     - Example module - Spectral entropy: coding/example_module.md
 ```
-[//]: # (yaml)
+
+[//]: # "yaml"
+
 When a new documentation page or subsection is added, yaml structure changes correspondingly. For example:
 
 ```
@@ -55,7 +57,7 @@ nav:
 You'll need to make a [GitHub Account](https://github.com/join).
 
 **2. Click Edit Button on Page You Want to Edit**
-![editbutton](img/contribute/editbutton.jpg)
+![editbutton](../img/contribute/editbutton.jpg)
 
 **3. Fork the Repository When Prompted (only the first time)**
 
@@ -63,21 +65,21 @@ You'll need to make a [GitHub Account](https://github.com/join).
 
 **4. Make the Edits in MarkDown**
 
-![img.png](img/contribute/makechanges.jpg)
+![img.png](../img/contribute/makechanges.jpg)
 
 **5. Propose Changes**
 
 Please describe the change you are making.
 
-![](img/contribute/proposechanges.jpg)
+![](../img/contribute/proposechanges.jpg)
 
 **6. Create Pull Request**
 
-![](img/contribute/createpr.jpg)
+![](../img/contribute/createpr.jpg)
 
 **7. Finalize Pull Request with Description**
 
-![](img/contribute/openpr.jpg)
+![](../img/contribute/openpr.jpg)
 
 ## **How to create a new page**
 
@@ -85,24 +87,22 @@ Please describe the change you are making.
 
 **Navigate to mzmine_documentation/docs in your fork and create a new file**
 
-![new_file](img/contribute/newfile.jpg)
+![new_file](../img/contribute/newfile.jpg)
 
 **Follow steps 4 - 7.**
 
 ## **Additional useful information**
+
 ### **Using icons**
 
 To highlight some points in the prepared documentation, it is advised to use icons. **Material for MkDocs** is integrated into MZmine documentation and suggests a wide range of icons, logos, and more. Icons can be found [here](https://squidfunk.github.io/mkdocs-material/reference/icons-emojis/).
 
-[//]: # (Used icons)
-
-[//]: # (:material-menu-open: )
-
-[//]: # ()
-[//]: # (:warning:)
-
-[//]: # ()
-[//]: # (:material-lightbulb:)
+[//]: # "Used icons"
+[//]: # ":material-menu-open: "
+[//]: #
+[//]: # ":warning:"
+[//]: #
+[//]: # ":material-lightbulb:"
 
 ### **Using mathematical formulas**
 
