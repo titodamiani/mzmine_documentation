@@ -8,14 +8,13 @@ use_directory_urls: false
 nav:
   - Home page: index.md
   - Getting started:
+    - getting_started/index.md
     - First steps: getting_started/first_steps.md
-    - Main window overview: main-window-overview.md
-    - Data conversion: data_conversion.md
-    - Command line tool (batch mode): commandline_tool.md
+    - Main window overview: getting_started/main-window-overview.md
+    - Data conversion: getting_started/data_conversion.md
+    - Command line tool (batch mode): getting_started/commandline_tool.md
     - Batch processing: workflows/batch_processing/batch-processing.md
-    - Processing wizard: wizard.md
- 
-  
+    - Processing wizard: getting_started/wizard.md
 
   - Processing modules:
       - I/O:
@@ -130,6 +129,7 @@ nav:
       - Library generation: workflows/librarygeneration/library_generation.md
 
   - Learners corner:
+      - learners_corner/index.md
       - Useful links: learners_corner/useful_links.md
       - General Terminology: learners_corner/terminology/general-terminology.md
       - IMS Terminology: learners_corner/terminology/ion-mobility-terminology.md
@@ -174,6 +174,8 @@ extra_css:
 theme:
   name: material
   logo: img/MZMine_logo_white.png
+  features:
+    - navigation.indexes 
 
 plugins:
   - search
