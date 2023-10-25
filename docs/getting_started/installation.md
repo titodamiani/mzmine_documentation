@@ -1,6 +1,4 @@
-# First steps
-
-## Installation
+# Installation
 
 The latest version of MZmine 3 can be downloaded [here](https://github.com/mzmine/mzmine3/releases/latest). We provide both installer packages (preferred but might require admin permissions) and portable versions for Windows, macOS and Linux. MZmine comes integrated with _Java Runtime Environment_; therefore, the local _Java_ installation has no impact on MZmine. Windows and macOS users might need to confirm to trust software from an unknown source.
 
