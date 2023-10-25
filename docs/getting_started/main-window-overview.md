@@ -2,29 +2,21 @@
 
 The MZmine 3 main window consists of four tabs:
 
-![MZmine main window overview](https://user-images.githubusercontent.com/37407705/136389356-d612dffd-89bd-4eca-87ae-a581eaaa01ab.png)
+![Main window](img/main_window.png)
 
-## MS data files and feature lists tab
+1. **Data files and feature lists tab**. Here you can find the imported data files and
+   processed feature lists. Files can be imported by drag-and-drop in the 'MS data files' tab.
 
-[1]: The (raw) ms data and feature list tabs. Here you can find your imported data files and
-processed feature lists. _Hint: you can also import files by dragging & dropping them to the ms data
-tab._
+2. **Main content panel**. Visualisations such as a raw data overview or a feature list can be
+   viewed here. This pane can also contain multiple tabs. Every tab can also be opened in a new
+   separate window by right-clicking on the header.
 
-## Main content pane
-
-[2]: The main content pane. Visualisations such as a raw data overview or a feature list can be
-viewed here. This pane can also contain multiple tabs. Every tab can also be opened in a new
-separate window by right-clicking on the header.
-
-## Main menu
-
-[3]: The main menu. Here you can find methods to import and process your data files and feature
-lists and visualise the results. Furthermore, projects can be saved and preferences can be set.
+3. **Menu**. Here you can find methods to import and process your data files and feature
+   lists and visualise the results. Furthermore, projects can be saved and preferences can be set.
 
 ## Task overview
 
-[4]: The task overview. Current tasks are displayed and their status and progress are indicated.
-Tasks can also be canceled by right clicking on a task.
+Current tasks are displayed and their status and progress are indicated. To cancel a running task, right click on it and hit 'Cancel task'.
 
 ## Page Contributors
 
