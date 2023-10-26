@@ -12,12 +12,12 @@ MZmine can generate a significant amount (several gigabytes) of temporary files 
 
 ## Running MZmine
 
-MZmine provides a user-friendly and interactive [graphical user interface](main-window-overview.md) (GUI) for data exploration, workflow optimization and results validation. Moreover, processing pipelines (including data import/export) can be run with a few clicks using the [batch mode](../workflows/batch_processing/batch-processing.md). Finally, MZmine can also be run through the [command-line interface](../commandline_tool.md), which enable its integration into fully automated data analysis pipelines (e.g., QC systems).
+MZmine provides a user-friendly and interactive [graphical user interface](main_window_overview.md) (GUI) for data exploration, workflow optimization and results validation. Moreover, processing pipelines (including data import/export) can be run with a few clicks using the [batch mode](../workflows/batch_processing/batch-processing.md). Finally, MZmine can also be run through the [command-line interface](../commandline_tool.md), which enable its integration into fully automated data analysis pipelines (e.g., QC systems).
 
 ## Useful resources
 
 If you are new to mass spectrometry data processing in MZmine, checkout the [Learners corner](../learners_corner/index.md) with tutorial videos, webinars and other resources!
 
-New MZmine users can take advantage of the new [_Processing wizard_](wizard.md) for the quick and beginner-friendly generation of data processing workflows for different MS platforms.
+New MZmine users can take advantage of the new [_Processing wizard_](processing_wizard.md) for the quick and beginner-friendly generation of data processing workflows for different MS platforms.
 
 {{ git_page_authors }}

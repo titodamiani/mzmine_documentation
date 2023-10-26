@@ -10,11 +10,10 @@ nav:
   - Getting started:
     - getting_started/index.md
     - Installation: getting_started/installation.md
-    - Main window overview: getting_started/main-window-overview.md
+    - Main window overview: getting_started/main_window_overview.md
     - Data conversion: getting_started/data_conversion.md
-    - Command line tool (batch mode): getting_started/commandline_tool.md
-    - Batch processing: workflows/batch_processing/batch-processing.md
-    - Processing wizard: getting_started/wizard.md
+    - Batch processing: getting_started/batch-processing.md
+    - Processing wizard: getting_started/processing_wizard.md
 
   - Processing modules:
       - I/O:
@@ -139,9 +138,9 @@ nav:
       - Spectral similarity measures: module_docs/id_spectral_library_search/spectral-similarity-measures.md
 
   - Troubleshooting:
-    - Common issues: common_issues.md
-    - Performance optimization: performance.md
-    - MacOS: macos_sign.md
+    - Common issues: troubleshooting/common_issues.md
+    - Performance optimization: troubleshooting/performance.md
+    - MacOS: troubleshooting/macos_sign.md
 
   - Contribute:
       - Coding:

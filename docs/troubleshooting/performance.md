@@ -2,10 +2,10 @@
 
 This section contains information on how to tune MZmine 3 for different systems. Generally these points can improve the throughput and memory constraints:
 
-- Check the latest [**Processing Wizard**](getting_started/wizard.md) workflows that may contain new modules and options to speed up and enrich your analysis. You may want to remove unnecessary steps.
+- Check the latest [**Processing Wizard**](../getting_started/processing_wizard.md) workflows that may contain new modules and options to speed up and enrich your analysis. You may want to remove unnecessary steps.
 - Make sure to set the **temporary** files directory to a **fast local drive**, e.g., SSD
-- [Convert files](getting_started/data_conversion.md) to centroided open formats, e.g., mzML
-- Run MZmine in **headless mode** as a [command-line tool](../commandline_tool.md) to avoid the graphical-user interface (GUI). Just provide a batch file and process on any computer or server.
+- [Convert files](../getting_started/data_conversion.md) to centroided open formats, e.g., mzML
+- Run MZmine in **headless mode** as a [command-line tool](../getting_started/batch-processing.md#batch-mode-cli) to avoid the graphical-user interface (GUI). Just provide a batch file and process on any computer or server.
 - Use the **advance data import** to reduce the amount of data that needs to be loaded. This will apply mass detection during the import.
 - Optimize your MZmine workflow in the batch mode, cosidering your data and study design:
   - Increase minimum feature height, noise levels, and other feature constraints. If a feature was detected in at least one sample - gap-filling will try to fill the gaps of missed features later.
