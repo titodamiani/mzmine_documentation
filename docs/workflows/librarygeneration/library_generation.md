@@ -98,7 +98,7 @@ the import at any time, since the vendor formats can change. For more informatio
 
 In MZmine, open the Processing wizard to creat your own batch configuration. Change the instrument
 settings to your instrument set up, e.g., Flow inject, and Orbitrap, and to **Library generation**.
-For more information, go to the [Processing wizard](../../wizard.md) page. The default settings are
+For more information, go to the [Processing wizard](../../getting_started/processing_wizard.md) page. The default settings are
 only suggestions and need to be updated and optimized for each dataset.
 
 Under the **Annotation** tab you need to upload your metadata sheet (Local CSV database):

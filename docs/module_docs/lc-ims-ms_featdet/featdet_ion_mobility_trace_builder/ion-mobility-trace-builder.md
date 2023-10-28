@@ -60,7 +60,7 @@ The binning width in mobility units of the selected raw data file.
 ## **Processing result**
 
 After performing ion mobiltiy trace detection, a feature list is created in the feature list tab
-(see [feature lists tab](../../../getting_started/main-window-overview.md#ms-data-files-and-feature-lists-tab)). In the
+(see [feature lists tab](../../../getting_started/main_window_overview.md)). In the
 feature table, multiple columns are created. The displayed columns can be set via the button on the
 right of the feature table ([1]).
 

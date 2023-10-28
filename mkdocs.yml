@@ -12,8 +12,9 @@ nav:
     - Installation: getting_started/installation.md
     - Main window overview: getting_started/main_window_overview.md
     - Data conversion: getting_started/data_conversion.md
-    - Batch processing: getting_started/batch-processing.md
+    - Batch processing: getting_started/batch_processing.md
     - Processing wizard: getting_started/processing_wizard.md
+    - Integration with other tools: getting_started/tool_integration.md
 
   - Processing modules:
       - I/O:
@@ -133,7 +134,6 @@ nav:
       - General Terminology: learners_corner/terminology/general-terminology.md
       - IMS Terminology: learners_corner/terminology/ion-mobility-terminology.md
       - LC-MS and LC-IMS-MS data comparison: workflows/imsworkflow/lc-ms-and-lc-ims-ms-data-comparison.md
-      - Integration to other tools: tool_integration.md
       - Kendrick mass defect: module_docs/feature_list_row_filter/kendrick_mass_defect.md
       - Spectral similarity measures: module_docs/id_spectral_library_search/spectral-similarity-measures.md
 

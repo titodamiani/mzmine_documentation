@@ -19,7 +19,7 @@ You can load a batch file using the 'Load' button.The 'Batch queue' panel displa
 ## Batch mode (GUI)
 
 **Project :material-arrow-right-thin: Batch mode**
-![batch-mode](batch_mode.png)
+![batch-mode](img/batch_mode.png)
 
 When a new step is added to the queue its parameter setup dialog is shown. The "Set paramaters" button allows the user to modify a step's parameter settings. The "Clear" button removes all steps. The "Load" and "Save" buttons make it possible to read and write batch steps to XML files.
 
@@ -32,7 +32,7 @@ The first step of a batch queue is performed on those raw data files and/or peak
 The processing wizard is inteded to quickly set up a general workflow for the processing of untargeted LC-MS and LC-IM-MS data. By clicking the "Set default" button, default settings for mass and feature detection are also provided according to the selected MS type (Orbitrap or TOF) and LC system (UHPLC or HPLC). Once the desired parameters have been set, hit the "Build batch" botton and a pre-populated batch window will open up.
 
 **Tools :material-arrow-right-thin: Processing wizard**
-![wizard](processing_wizard.png)
+![Processing wizard](img/processing_wizard.png)
 
 ### **Mass spectrometers presets**
 

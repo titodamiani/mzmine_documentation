@@ -28,8 +28,8 @@ the [Mass detection](../../module_docs/featdet_mass_detection/mass-detection.md)
 that this heavily impacts the performance of the whole workflow, since imaging spectra are usually
 richer in information than LC-MS spectra. If you experience performance (e.g., RAM issues), consider
 using a higher cutoff. IMS-MS imaging data sets require mass detection on
-the [Frame](../../terminology/ion-mobility-terminology.md#accumulations-mobility-scans-and-frames)
-and [mobility scan](../../terminology/ion-mobility-terminology.md#accumulations-mobility-scans-and-frames)
+the [Frame](../../learners_corner/terminology/ion-mobility-terminology.md#accumulations-mobility-scans-and-frames)
+and [mobility scan](../../learners_corner/terminology/ion-mobility-terminology.md#accumulations-mobility-scans-and-frames)
 level.
 
 ## Feature detection
@@ -47,7 +47,7 @@ be [resolved](../../module_docs/featdet_resolver_local_minimum/local-minimum-res
 After feature detection, the ion image features can be filtered to refine the results, for example
 by the [Feature filter](../../module_docs/feature_filter/feature_filter.md) or
 the [Rows filter](../../module_docs/feature_list_row_filter/feature_list_rows_filter.md). Additional
-filters are found in the  :material-menu-open: **Feature list methods → Feature filtering** menu.
-When using the deisotoping modules, consider that there is no chromatographic separation. 
+filters are found in the :material-menu-open: **Feature list methods → Feature filtering** menu.
+When using the deisotoping modules, consider that there is no chromatographic separation.
 
 {{ git_page_authors }}
