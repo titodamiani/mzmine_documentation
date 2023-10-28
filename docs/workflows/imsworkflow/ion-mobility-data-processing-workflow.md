@@ -111,7 +111,7 @@ isomers might hide behind a single chromatographic peak.
 
 ## Graphical comparison of LC-MS and LC-IMS-MS data
 
-[Data comparison](lc-ms-and-lc-ims-ms-data-comparison.md)
+[Data comparison](../../learners_corner/feature_detection.md#lc-ms-vs-lc-ims-ms-data)
 
 ## Page Contributors
 

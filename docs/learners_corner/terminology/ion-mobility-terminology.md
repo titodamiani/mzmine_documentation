@@ -14,7 +14,7 @@ From practical point of view, IM nicely fits in-between LC separation (~seconds 
 
 For example, assuming a typical 100 µs MS-acquisition time of TOF analyzers, around 1000 spectra can be recorded within 100 ms of IM separation. Therefore, as opposed to LC-MS, multiple MS (or MS2) spectra are associated to each RT in LC-IM-MS data.
 
-A more detailed explanation of LC-MS and LC-IMS-MS raw data structure is provided [here](../../workflows/imsworkflow/lc-ms-and-lc-ims-ms-data-comparison.md).
+A more detailed explanation of LC-MS and LC-IMS-MS raw data structure is provided [here](../feature_detection.md#lc-ms-vs-lc-ims-ms-data).
 
 [Visual explanation of IMS by Waters](https://www.youtube.com/watch?v=RRxW18bFbHo)
 
@@ -46,9 +46,9 @@ As explained [above](#background), since the accumulation-separation cycle typic
 
 **Frame** is the set of **mobility scans** collected during each IM separation. A frame can be seen as the IM separation of a single accumulation, along which multiple MS spectra are collected. Several frames are contained within one LC peak. Thus, the **frame number** are a natural unit to measure chromatographic RT.
 
-See [here](../../workflows/imsworkflow/lc-ms-and-lc-ims-ms-data-comparison.md) for more details.
+See [here](../feature_detection.md#lc-ms-vs-lc-ims-ms-data) for more details.
 
-![lcimsmsdata](../../workflows/imsworkflow/lcimsmsdataformat.png)
+![lcimsmsdata](../img/lcimsmsdataformat.png)
 
 ### Mobilograms
 

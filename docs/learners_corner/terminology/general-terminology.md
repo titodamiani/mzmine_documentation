@@ -124,7 +124,7 @@ In MS data processing, the term **mass** is normally used to refer to an individ
 
 In LC-MS, a **feature** is defined as a bounded, two-dimensional (_m/z_ and RT dimensions) signal characterized by a pair of _m/z_ and RT values and associated with the detected signal intensity.
 
-In LC-IM-MS, a **feature** is also characterized by the ion mobility value recorded for the ion (see [LC-MS and LC-IMS-MS data comparison](../../workflows/imsworkflow/lc-ms-and-lc-ims-ms-data-comparison.md).
+In LC-IM-MS, a **feature** is also characterized by the ion mobility value recorded for the ion (see [LC-MS and LC-IMS-MS data comparison](../feature_detection.md#lc-ms-vs-lc-ims-ms-data).
 
 **MZmine 3** provides a selection of different algorithms for LC-(IM)-MS feature detection, depending on the nature of the MS data (_e.g._ mass accuracy and resolution). All the algorithms follow the same logic:
 
