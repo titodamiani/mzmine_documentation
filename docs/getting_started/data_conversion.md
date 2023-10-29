@@ -1,18 +1,8 @@
-# Data handling (supported formats)
+# Data conversion
 
-MZmine supports both **open** (e.g., .mzML, .mzXML, .imzML, .netCDF, and .aird) and **proprietary**
-formats from
-Thermo Scientific .raw, and Bruker Daltonics .d and .tdf/tsf. All other raw data files from other
-vendors must be converted into an open format prior to the import. Therefore, a vendor-provided or
-third-party software can be used.
+MZmine supports proprietary formats from various MS vendors (see [Supported data formats](input.md#supported-data-formats)). Raw data files from non-supported vendors must be converted to open format prior to import in MZmine. For this, a vendor-provided or third-party software can be used.
 
-The **recommendations** for the data handling are the conversion of the raw data to centroided .mzML
-data files,
-except for timsTOF data (native .tdf and .tsf inside the Bruker .d folder), and the conversion of MS
-imaging data
-to .imzML, except for the timsTOF fleX MS imaging data.
-
-## Data conversion to open formats (.mzML / .imzML)
+## Open formats (mzML, imzML)
 
 ### MSConvert (ProteoWizard) to mzML
 

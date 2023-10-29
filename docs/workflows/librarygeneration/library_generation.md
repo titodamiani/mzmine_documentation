@@ -94,7 +94,7 @@ suffix, and polarity.
 
 Data should be converted to open data formats, e.g., mzML before importing in MZmine. This step guarantees
 the import at any time, since the vendor formats can change. For more information and possibilities go to
-[Data conversion](../../getting_started/data_conversion.md).
+[Data conversion](../../getting_started/input.md).
 
 In MZmine, open the Processing wizard to creat your own batch configuration. Change the instrument
 settings to your instrument set up, e.g., Flow inject, and Orbitrap, and to **Library generation**.

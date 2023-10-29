@@ -11,11 +11,12 @@ nav:
     - getting_started/index.md
     - Installation: getting_started/installation.md
     - Main window overview: getting_started/main_window_overview.md
-    - Data conversion: getting_started/data_conversion.md
+    - Inout: getting_started/input.md
+    - Output: getting_started/output.md
     - Batch processing: getting_started/batch_processing.md
     - Processing wizard: getting_started/processing_wizard.md
-    - Integration with other tools: getting_started/tool_integration.md
-
+    - Data conversion: getting_started/data_conversion.md
+    
   - Processing modules:
       - I/O:
           -  Raw data import: module_docs/io/data-import.md
@@ -109,7 +110,7 @@ nav:
         - Spectra similarity: module_docs/align_join_aligner/spectra_similarity.md
 
   - Visualization modules:
-      - Visualization overview: visualization_modules/visualization_overview/visualization-overview.md
+      - visualization_modules/index.md
       - MS data visualisation:
           - Raw data overview: visualization_modules/raw_data_overview/raw_data_overview.md
           - Additional tools:  visualization_modules/raw_data_overview/raw_data_additional.md
@@ -127,6 +128,8 @@ nav:
       - Untargeted LC-IMS-MS workflow: workflows/imsworkflow/ion-mobility-data-processing-workflow.md
       - Untargeted MS imaging workflow: workflows/imagingworkflow/imaging-workflow.md
       - Library generation: workflows/librarygeneration/library_generation.md
+      - Integration with other tools: workflows/tool_integration.md
+
 
   - Learners corner:
       - learners_corner/index.md

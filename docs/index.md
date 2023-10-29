@@ -9,16 +9,16 @@ are described and general recommendations are given. New to MZmine 3? [Get start
 !!! note ""
 
     When using the MZmine software, please cite the following paper:<br>
-    Robin Schmid, Steffen Heuckeroth, Ansgar Korf et al. Integrative analysis of multimodal mass spectrometry data in MZmine 3. _**Nature Biotechnology**_ (2023), DOI: [10.1038/s41587-023-01690-2](https://www.nature.com/articles/s41587-023-01690-2).
+    Robin Schmid, Steffen Heuckeroth, Ansgar Korf et al. _Integrative analysis of multimodal mass spectrometry data in MZmine 3_. **Nature Biotechnology** (2023), DOI: [10.1038/s41587-023-01690-2](https://www.nature.com/articles/s41587-023-01690-2).
 
 ---
 
 # About MZmine 3
 
 Since the introduction of MZmine 2 in 2010, the [MZmine project](https://github.com/mzmine) has matured into a community-driven, highly
-collaborative platform and. Over the years, MZmine's functions have expanded based on users' needs and feedback and, thanks to the invaluable contribution of [developers](https://github.com/mzmine/mzmine3/graphs/contributors) from all around the world, MZmine has become one of the most popular tools for untargeted MS data analysis and visualization.
+collaborative platform. Over the years, MZmine's functions have expanded based on users' needs and feedback and, thanks to the invaluable contribution of [developers](https://github.com/mzmine/mzmine3/graphs/contributors) from all around the world, MZmine has become one of the most popular tools for untargeted MS data analysis and visualization.
 
-Compared to MZmine 2, MZmine 3 comes with a redesigned and fully customizable [GUI](getting_started/main_window_overview.md) based on the JavaFX technology that allows an interactive visualization and validation of the results at every processing step. A completely new data structure provides the flexibility to process any type of mass spectrometry data,
+MZmine 3 comes with a redesigned and fully customizable [GUI](getting_started/main_window_overview.md) based on the JavaFX technology that allows an interactive visualization and validation of the results at every processing step. A completely new data structure provides the flexibility to process any type of mass spectrometry data,
 like LC-MS, GC-MS and MS-imaging. Moreover, MZmine 3 supports ion mobility, with a
 dedicated [LC-IM-MS data visualization](visualization_modules/ims_raw_data_overview/IM-data-visualisation.md)
 module and [feature detection workflow](workflows/imsworkflow/ion-mobility-data-processing-workflow.md). Finally, significant effort was devoted to trace memory issues and bottlenecks, resulting in an unprecendent processing performance and scalability.
@@ -28,7 +28,7 @@ software for MS data analysis, such as
 the [SIRIUS](https://bio.informatik.uni-jena.de/software/sirius/) suite for _in silico_ metabolite
 annotation, the [GNPS](https://gnps.ucsd.edu/ProteoSAFe/static/gnps-splash.jsp?redirect=auth)
 platform, the [MetaboAnalyst](https://www.metaboanalyst.ca/)
-web app for univariate and multivariate statistical anlysis, _etc._
+web app statistical anlysis, _etc._
 
 !!! tip "**COMING SOON!**"
 
