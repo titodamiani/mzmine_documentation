@@ -1,4 +1,4 @@
-# Visualization modules
+# Data visualization
 
 MZmine provides a rangle of interactive visualization tools for analysis of raw and processed data. Most of the generated plots are interactive.
 

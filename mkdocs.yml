@@ -11,7 +11,7 @@ nav:
     - getting_started/index.md
     - Installation: getting_started/installation.md
     - Main window overview: getting_started/main_window_overview.md
-    - Inout: getting_started/input.md
+    - Input: getting_started/input.md
     - Output: getting_started/output.md
     - Batch processing: getting_started/batch_processing.md
     - Processing wizard: getting_started/processing_wizard.md
@@ -202,6 +202,7 @@ markdown_extensions:
   #   https://squidfunk.github.io/mkdocs-material/reference/formatting/
   #   superscript ^13^C subscript H~2~O
   #   key combinations: ++ctrl+alt+del++
+  - def_list
   - pymdownx.caret
   - pymdownx.keys
   - pymdownx.mark

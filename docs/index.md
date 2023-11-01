@@ -20,7 +20,7 @@ collaborative platform. Over the years, MZmine's functions have expanded based o
 
 MZmine 3 comes with a redesigned and fully customizable [GUI](getting_started/main_window_overview.md) based on the JavaFX technology that allows an interactive visualization and validation of the results at every processing step. A completely new data structure provides the flexibility to process any type of mass spectrometry data,
 like LC-MS, GC-MS and MS-imaging. Moreover, MZmine 3 supports ion mobility, with a
-dedicated [LC-IM-MS data visualization](visualization_modules/ims_raw_data_overview/IM-data-visualisation.md)
+dedicated [LC-IM-MS data visualization](data_visualization/ims_raw_data_overview/IM-data-visualisation.md)
 module and [feature detection workflow](workflows/imsworkflow/ion-mobility-data-processing-workflow.md). Finally, significant effort was devoted to trace memory issues and bottlenecks, resulting in an unprecendent processing performance and scalability.
 
 Thanks to community efforts and collaboration with other open-source projects, the MZmine ecosystem is tightly integrated with popular third-party

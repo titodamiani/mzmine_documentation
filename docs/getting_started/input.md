@@ -1,21 +1,24 @@
 # Input
 
-MZmine's takes MS data files as input. Several MS data formats are supported (see [below](#supported-data-formats)). MS data files can be either viusally explored through several [visualization modules](../visualization_modules/index.md), or processed to extract [feature lists and spectral file summaries](output.md).
+MZmine's takes MS data files as input. Several MS data formats are supported (see [below](#supported-data-formats)). MS data files can be either viusally explored through several [visualization modules](../data_visualization/index.md), or processed to extract [feature lists and spectral file summaries](output.md).
 
 ## Supported data formats
 
 MZmine supports both open and proprietary formats. In particular:
 
-- Open formats:
-  - `mzML`
-  - `imzML`
-  - `mzXML`
-  - `mzData`
-  - `netCDF`
-  - `aird`
-- Proprietary formats:
-  - Thermo Scientific (`.raw`)
-  - Bruker Daltonics (`.d`, `.tdf`/`.tsf`)
+**Open formats**:
+
+- `mzML`
+- `imzML`
+- `mzXML`
+- `mzData`
+- `netCDF`
+- `aird`
+
+**Proprietary formats**:
+
+- Thermo Scientific (`.raw`)
+- Bruker Daltonics (`.d`, `.tdf`/`.tsf`)
 
 Raw data files from non-supported vendors must be converted to open format prior to import in MZmine (see [Data conversion](data_conversion.md) section).
 
