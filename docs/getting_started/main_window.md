@@ -9,7 +9,7 @@ The MZmine 3 main window consists of four tabs:
 
 2.  **Main content panel**. [Visualization of raw data](../data_visualization/index.md) as well as [processing results](output.md) (e.g., feature lists) can be done in this panel. Multiple tabs can be opened in this panel. Moreover, tabs can also be opened in separate windows by right-click on the header and 'Open in new window'.
 
-3.  **Menu**. Form the menu you can open/save MZmine projects, change software preferences and access alsmost any module present in MZmine. Submenus are organized as follows:
+3.  **Menu**. Form the menu you can open/save MZmine projects, change software preferences and access almost any module present in MZmine. Submenus are organized as follows:
 
     - Project.
     - Raw data methods.
