@@ -109,19 +109,19 @@ nav:
         - Merge MS/MS: module_docs/io/merge_ms2_kai.md
         - Spectra similarity: module_docs/align_join_aligner/spectra_similarity.md
 
-  - Visualization modules:
-      - visualization_modules/index.md
+  - Data visualization:
+      - data_visualization/index.md
       - MS data visualisation:
-          - Raw data overview: visualization_modules/raw_data_overview/raw_data_overview.md
-          - Additional tools:  visualization_modules/raw_data_overview/raw_data_additional.md
-      - Ion mobility data visualisation:  visualization_modules/ims_raw_data_overview/IM-data-visualisation.md
-      - Image viewer: visualization_modules/image_raw_data/image_viewer.md
+          - Raw data overview: data_visualization/raw_data_overview/raw_data_overview.md
+          - Additional tools:  data_visualization/raw_data_overview/raw_data_additional.md
+      - Ion mobility data visualisation:  data_visualization/ims_raw_data_overview/IM-data-visualisation.md
+      - Image viewer: data_visualization/image_raw_data/image_viewer.md
       - Processed data visualition:
-          - MSMS Visualizer: visualization_modules/msmsplot/msms-plot.md
-          - Interactive Ion Identity Molecular Networks: visualization_modules/interactive_ion_id_netw/interactive_ion_id_netw.md
-          - Feature histograms: visualization_modules/feature_histograms/feature_hist.md
-          - Additional tools: visualization_modules/processed_additional/processed_additional.md
-      - Massvoltammogram: visualization_modules/massvoltammogram/massvoltammogram.md
+          - MSMS Visualizer: data_visualization/msmsplot/msms-plot.md
+          - Interactive Ion Identity Molecular Networks: data_visualization/interactive_ion_id_netw/interactive_ion_id_netw.md
+          - Feature histograms: data_visualization/feature_histograms/feature_hist.md
+          - Additional tools: data_visualization/processed_additional/processed_additional.md
+      - Massvoltammogram: data_visualization/massvoltammogram/massvoltammogram.md
 
   - Workflows:
       - Untargeted LC-MS workflow: workflows/lcmsworkflow/lcms-workflow.md
