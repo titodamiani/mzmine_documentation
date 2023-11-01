@@ -16,7 +16,7 @@ MZmine can generate a significant amount (several gigabytes) of temporary files 
 
 ## Running MZmine
 
-MZmine provides a user-friendly and interactive [GUI](main_window_overview.md) for data exploration, workflow optimization and results validation. Moreover, processing pipelines (including data import/export) can be run with a few clicks using the [batch mode](batch_processing.md). Finally, MZmine can also be run through the [CLI](./batch_processing.md#batch-mode-cli), which enable its integration into fully automated data analysis pipelines (e.g., QC systems).
+MZmine provides a user-friendly and interactive [GUI](main_window.md) for data exploration, workflow optimization and results validation. Moreover, processing pipelines (including data import/export) can be run with a few clicks using the [batch mode](batch_processing.md). Finally, MZmine can also be run through the [CLI](./batch_processing.md#batch-mode-cli), which enable its integration into fully automated data analysis pipelines (e.g., QC systems).
 
 ## Useful resources
 

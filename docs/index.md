@@ -18,7 +18,7 @@ are described and general recommendations are given. New to MZmine 3? [Get start
 Since the introduction of MZmine 2 in 2010, the [MZmine project](https://github.com/mzmine) has matured into a community-driven, highly
 collaborative platform. Over the years, MZmine's functions have expanded based on users' needs and feedback and, thanks to the invaluable contribution of [developers](https://github.com/mzmine/mzmine3/graphs/contributors) from all around the world, MZmine has become one of the most popular tools for untargeted MS data analysis and visualization.
 
-MZmine 3 comes with a redesigned and fully customizable [GUI](getting_started/main_window_overview.md) based on the JavaFX technology that allows an interactive visualization and validation of the results at every processing step. A completely new data structure provides the flexibility to process any type of mass spectrometry data,
+MZmine 3 comes with a redesigned and fully customizable [GUI](getting_started/main_window.md) based on the JavaFX technology that allows an interactive visualization and validation of the results at every processing step. A completely new data structure provides the flexibility to process any type of mass spectrometry data,
 like LC-MS, GC-MS and MS-imaging. Moreover, MZmine 3 supports ion mobility, with a
 dedicated [LC-IM-MS data visualization](data_visualization/ims_raw_data_overview/IM-data-visualisation.md)
 module and [feature detection workflow](workflows/imsworkflow/ion-mobility-data-processing-workflow.md). Finally, significant effort was devoted to trace memory issues and bottlenecks, resulting in an unprecendent processing performance and scalability.

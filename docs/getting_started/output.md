@@ -9,7 +9,7 @@ Both these outputs are used by other third-party tools for further downstream an
 
 ## Explore _feature lists_
 
-Feature lists can be visualised and explored directly in MZmine. To open a feature list in the [main window](main_window_overview.md) simply double click on it (or 'right click → Open feature list')
+Feature lists can be visualised and explored directly in MZmine. To open a feature list in the [main window](main_window.md) simply double click on it (or 'right click → Open feature list')
 
 ![Feature list](img/feature_list.png)
 

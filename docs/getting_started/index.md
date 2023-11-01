@@ -1,7 +1,7 @@
 # Getting started
 
 - [Installation](installation.md)
-- [Main window overview](main_window_overview.md)
+- [Main window overview](main_window.md)
 - [Input](input.md)
 - [Output](output.md)
 - [Batch processing](batch_processing.md)

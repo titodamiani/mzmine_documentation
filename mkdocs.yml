@@ -10,7 +10,7 @@ nav:
   - Getting started:
     - getting_started/index.md
     - Installation: getting_started/installation.md
-    - Main window overview: getting_started/main_window_overview.md
+    - Main window: getting_started/main_window.md
     - Input: getting_started/input.md
     - Output: getting_started/output.md
     - Batch processing: getting_started/batch_processing.md

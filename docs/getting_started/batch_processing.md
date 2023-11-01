@@ -1,10 +1,10 @@
 # **Batch processing**
 
-Besides the interactive [GUI](main_window_overview.md), MZmine can be also run in '**batch mode**', which means using the so-called [batch files](#batch-file). Batch processing enables the user to run entire processing pipelines with a few clicks, or even through the [command-line interface (CLI](#command-line-interface-cli). This makes MZmine suitable to be integrated into automated data analysis pipelines (e.g. QC systems).
+Besides the interactive [GUI](main_window.md), MZmine can be also run in **batch mode**, which means using the so-called [batch files](#batch-file). Batch processing enables the user to run entire processing pipelines with a few clicks, or even through the [command-line interface (CLI](#command-line-interface-cli). This makes MZmine suitable to be integrated into automated data analysis pipelines (e.g. QC systems).
 
 ## Batch file
 
-A batch file (XML format) is basically a list of processing steps (i.e. modules and their corresponding parameters) for MZmine to run one after another. Virtually any processing pipeline (including data import/export) can be saved as a batch file and executed with a few clicks [through the GUI](#batch-mode-gui). Batch files can be also opened in the GUI, which is a good way to visualise the structure of your workflow. To do so, go to '**Project → Batch mode**' or press ++ctrl+B++ (++command+B++ on Mac). This will open the following dialog:
+A batch file (XML format) is basically a list of processing steps (i.e., modules and their corresponding parameters) for MZmine to run one after another. Virtually any processing pipeline (including data import/export) can be saved as a batch file and executed with a few clicks [through the GUI](#batch-mode-gui). Batch files can be also opened in the GUI, which is a good way to visualise the structure of your workflow. To do so, go to '**Project → Batch mode**' or press ++ctrl+b++ (++command+b++ on Mac). This will open the following dialog:
 
 ![Batch dialog](img/batch_dialog.png)
 

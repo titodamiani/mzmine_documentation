@@ -1,4 +1,4 @@
-# Main window overview
+# Main window
 
 The MZmine 3 main window consists of four tabs:
 
@@ -23,6 +23,8 @@ The MZmine 3 main window consists of four tabs:
     - <span style="color:red">**[TODO: add descriptions]**</span>
 
     [//]: # "TODO after Menu cleanup"
+
+---
 
 ## Task overview
 
