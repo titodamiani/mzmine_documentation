@@ -11,18 +11,15 @@ The MZmine 3 main window consists of four tabs:
 
 3.  **Menu**. Form the menu you can open/save MZmine projects, change software preferences and access almost any module present in MZmine. Submenus are organized as follows:
 
-    - Project.
-    - Raw data methods.
-    - Feature detection.
-    - Feature lists methods.
-    - Visualization.
-    - Tools.
-    - Processing wizard.
-    - Windows.
-    - Help.
-    - <span style="color:red">**[TODO: add descriptions]**</span>
-
-    [//]: # "TODO after Menu cleanup"
+    - **Project**. Save/load an MZmine project, open batch mode and set preferences.
+    - **Raw data methods**. Modules for spectral processing (e.g., data import/export, mass detection).
+    - **Feature detection**. Modules for feature detection and resolving for all supported data types: LC-(IMS)-MS, GC-MS and MS imaging.
+    - **Feature lists methods**. Modules for feature lists processing (e.g., isotopes filtering, alignment, spectral deconvolution).
+    - **Visualization**. All visualization modules in MZmine for raw data inspection.
+    - **Tools**. Modules for various tools (e.g., spectral mirror).
+    - **Processing wizard**. Open the [Processing wizard](processing_wizard.md)
+    - **Windows**. Modify the [Task overview](#task-overview) position.
+    - **Help**. Open [this](https://mzmine.github.io/mzmine_documentation/) documentation, report an issue, etc.
 
 ---
 

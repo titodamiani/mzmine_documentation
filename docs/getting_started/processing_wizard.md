@@ -1,22 +1,27 @@
 # Processing wizard
 
-The processing wizard reduces the configuration of complex standardized workflows into few parameters. Those values are used to estimate or calculate all other parameters from spectral processing over feature detection and alignment to annotation and data export. The wizard organizes the different parts of the instrumentatl setup to define a workflow split up into: Sample introduction, IMS, MS instrument, workflow. More specific workflows are planned and we are open for ideas and contributions. Feel free to reach out if your workflow might be a candidate for a wizard setup.
+The _Processing wizard_ enables the quick and beginner-friendly generation of standardized [batch workflows](batch_processing.md#batch-file) for the different MS platforms (e.g., LC–MS, GC–MS). The configuration of complex workflows is reduced to a few parameters, from which all other feature detection settings are estimated/calculated.
 
-:material-menu-open: **Processing wizard**
-
-!!! tip
-The wizard is split into sections, most importantly, the MS part and the chromatography part. Parameters here reflect the sensitivity, resolution, and accuracy of these parts of the hyphenation. Selecting one of the default presets actually populates the initial values.
-
-!!! danger
-The defaults are only suggestions and different acquisition methods and instruments produce different noise levels etc. The **raw data overview** and **aligned feature lists** are useful to optimize these parameters.
-
-## Parameter tabs
+To _Processing wizard_ can be opened from the corresponding MZmine menu or by pressing ++ctrl+w++ (++command+w++ on Mac). This will open the following dialog:
 
 ![Processing wizard](../img/wizard.png)
 
-Produces this batch:
+The wizard is organised in the following sections:
 
-![Processing wizard](../img/wizard_batch.png)
+- Sample introduction. Select the instrumental setup and/or ionization source (e.g. HPLC, MALDI, flow-injection)
+- IMS. If ion-mobility separation was eanbled during the analysis, select the IMS device (e.g., TIMS, DTIMS), otherwise leave the field empty.
+- MS analyser. Select the MS analyser used for the analysis.
+- Data acquisition. Select the data acquiistion strategy used for the analysis (e.g. DDA, DIA).
+
+After selecting the desired instrumental setup, each section can be configured in the tabs shown in the bottom panel.
+
+Directories for input data import and output files export can also be specified. Although default parameters are provided, adjustments might be needed based on the specific user’s application or instrument performance. After setting all the required parameters, click the ‘Create batch’ button to open the created batch file in the [batch window](batch_processing.md#batch-mode-gui).
+
+Parameters here reflect the sensitivity, resolution, and accuracy of these parts of the hyphenation.
+
+!!! warning
+
+    The default settings are optimized on sample datasets used during the MZmine development. Although probably suitable for many appications, it is strongly recommended not to blindly rely on them. Rather, use them as as a reference and/or starting point for optimization.
 
 ## Data import
 
@@ -153,36 +158,3 @@ The data-dependent acquisition workflow is the default non target workflow. We r
 More method and contributor **metadata** is required to build spectral libraries. This workflow produces reference libraries with options to filter and merge spectra.
 
 {{ git_page_authors }}
-
-# Processing wizard
-
-The processing wizard is inteded to quickly set up a general workflow for the processing of untargeted LC-MS and LC-IM-MS data. By clicking the "Set default" button, default settings for mass and feature detection are also provided according to the selected MS type (Orbitrap or TOF) and LC system (UHPLC or HPLC). Once the desired parameters have been set, hit the "Build batch" botton and a pre-populated batch window will open up.
-
-**Tools :material-arrow-right-thin: Processing wizard**
-![Processing wizard](img/processing_wizard.png)
-
-### **Mass spectrometers presets**
-
-MS type: When TOF is selected, the "Ion mobility" can be enabled <br>
-MS1 and MS2 noise level: <br>
-Minimum feature height: <br>
-Scan to scan m/z tolerance: <br>
-Feature to feature m/z tolerance: <br>
-
-### **HPLC presets**
-
-Stable ionization across samples: <br>
-Crop retention time: <br>
-Max peaks in chromatogram: <br>
-Min samples per aligned feature: <br>
-Min # of data points: <br>
-Approximate feature FWHM: <br>
-Intra-sample RT tolerance: <br>
-Inter-sample RT tolerance: <br>
-Only keep feature with 13C: <br>
-Original feature list: <br>
-Export path: <br>
-
-!!! warning
-
-    The default settings were optimized on sample datasets used during the MZmine 3 development. Although probably suitable for many appications, it is strongly recommended not to blindly rely on them. Rather, optimal processing parameters should be chosen based on the LC-(IM)-MS system performance and data acquisition settings.
