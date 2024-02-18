@@ -4,7 +4,7 @@ The _Processing wizard_ enables the quick and beginner-friendly generation of st
 
 To _Processing wizard_ can be opened from the corresponding MZmine menu or by pressing ++ctrl+w++ (++command+w++ on Mac). This will open the following dialog:
 
-![Processing wizard](../img/wizard.png)
+![Processing wizard](./img/wizard.png)
 
 The wizard is organised in the following sections:
 

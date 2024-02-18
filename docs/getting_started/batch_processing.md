@@ -1,6 +1,6 @@
 # **Batch processing**
 
-Besides the interactive [GUI](main_window.md), MZmine can be also run in **batch mode**, which means using the so-called [batch files](#batch-file). Batch processing enables the user to run entire processing pipelines with a few clicks, or even through the [command-line interface (CLI](#command-line-interface-cli). This makes MZmine suitable to be integrated into automated data analysis pipelines (e.g. QC systems).
+Besides the interactive [GUI](main_window.md), MZmine can be also run in **batch mode**, which means using the so-called [batch files](#batch-file). Batch processing enables the user to run entire processing pipelines with a few clicks, or even through the [command-line interface (CLI)](#command-line-interface-cli). This makes MZmine suitable to be integrated into automated data analysis pipelines (e.g. QC systems).
 
 ## Batch file
 
